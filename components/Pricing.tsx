@@ -27,10 +27,7 @@ export function Pricing() {
         <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'hsl(240 5% 96%)' }}>
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2
-                        className="text-4xl md:text-5xl mb-4"
-                        style={{ fontFamily: 'Poppins, sans-serif' }}
-                    >
+                    <h2 className="text-4xl md:text-5xl mb-4 font-bold" >
                         Simple, Transparent{" "}
                         <span style={{ color: 'hsl(217 91% 60%)' }}>Pricing</span>
                     </h2>
@@ -43,11 +40,11 @@ export function Pricing() {
                     {/* Free Tier */}
                     <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200">
                         <div className="mb-8">
-                            <h3 className="text-2xl mb-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                            <h3 className="text-2xl mb-2 font-bold">
                                 Free
                             </h3>
                             <div className="flex items-baseline gap-2 mb-4">
-                                <span className="text-5xl" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                                <span className="text-5xl font-extrabold">
                                     ₹0
                                 </span>
                                 <span className="text-gray-600">/month</span>
@@ -100,11 +97,11 @@ export function Pricing() {
                         </div>
 
                         <div className="mb-8">
-                            <h3 className="text-2xl mb-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                            <h3 className="text-2xl mb-2 font-bold">
                                 Pro
                             </h3>
                             <div className="flex items-baseline gap-2 mb-4">
-                                <span className="text-5xl" style={{ fontFamily: 'Poppins, sans-serif', color: 'hsl(217 91% 60%)' }}>
+                                <span className="text-5xl font-extrabold" style={{ color: 'hsl(217 91% 60%)' }}>
                                     ₹299
                                 </span>
                                 <span className="text-gray-600">/month</span>

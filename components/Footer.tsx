@@ -5,7 +5,7 @@ export function Footer() {
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     {/* Brand */}
                     <div className="md:col-span-2">
-                        <span className="text-2xl text-white mb-4 block" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                        <span className="text-2xl text-white mb-4 block font-bold">
                             <span style={{ color: 'hsl(217 91% 60%)' }}>Libly</span>.Space
                         </span>
                         <p className="text-gray-400 max-w-md">
@@ -16,7 +16,7 @@ export function Footer() {
 
                     {/* Product */}
                     <div>
-                        <h4 className="text-white mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                        <h4 className="text-white mb-4 font-semibold">
                             Product
                         </h4>
                         <ul className="space-y-2">
@@ -57,7 +57,7 @@ export function Footer() {
 
                     {/* Company */}
                     <div>
-                        <h4 className="text-white mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                        <h4 className="text-white mb-4 font-semibol">
                             Company
                         </h4>
                         <ul className="space-y-2">

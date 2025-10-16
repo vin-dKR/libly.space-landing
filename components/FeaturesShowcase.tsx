@@ -57,10 +57,7 @@ export function FeaturesShowcase() {
         <section id="features" className="py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2
-                        className="text-4xl md:text-5xl mb-4"
-                        style={{ fontFamily: 'Poppins, sans-serif' }}
-                    >
+                    <h2 className="text-4xl md:text-5xl mb-4 font-bold">
                         Powerful Features for{" "}
                         <span style={{ color: 'hsl(217 91% 60%)' }}>Complete Control</span>
                     </h2>
@@ -107,10 +104,7 @@ export function FeaturesShowcase() {
                                         >
                                             {feature.subtitle}
                                         </p>
-                                        <h3
-                                            className="text-3xl md:text-4xl mb-4"
-                                            style={{ fontFamily: 'Poppins, sans-serif' }}
-                                        >
+                                        <h3 className="text-3xl md:text-4xl mb-4" >
                                             {feature.title}
                                         </h3>
                                         <p className="text-lg text-gray-600 leading-relaxed">
@@ -134,10 +128,7 @@ export function FeaturesShowcase() {
                     >
                         <Shield className="w-8 h-8 text-white" />
                     </div>
-                    <h3
-                        className="text-3xl mb-4"
-                        style={{ fontFamily: 'Poppins, sans-serif' }}
-                    >
+                    <h3 className="text-3xl mb-4 font-bold">
                         Safe & Secure
                     </h3>
                     <p className="text-lg text-gray-700 max-w-2xl mx-auto">

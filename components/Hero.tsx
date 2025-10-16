@@ -1,12 +1,12 @@
 import { Button } from "./ui/button";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { CheckCircle2 } from "lucide-react";
 import { ContainerScroll } from "./ui/container-scroll-animation";
+import Image from "next/image";
 
 export function Hero() {
     return (
-        <section className="pt-20 pb-20 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto overflow-hidden">
+        <section className="px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto overflow-hidden pt-[200px] sm:pt-40">
                 <ContainerScroll
                     titleComponent={
                         <>
@@ -17,10 +17,7 @@ export function Hero() {
                                     </span>
                                 </div>
 
-                                <h1
-                                    className="text-5xl md:text-6xl tracking-tight"
-                                    style={{ fontFamily: 'Poppins, sans-serif' }}
-                                >
+                                <h1 className="text-5xl md:text-6xl tracking-tight font-bold">
                                     Manage Your Library{" "}
                                     <span style={{ color: 'hsl(217 91% 60%)' }}>Effortlessly</span>
                                 </h1>
@@ -80,13 +77,14 @@ export function Hero() {
                         </>
                     }
                 >
-                    <img
+                    <Image
                         src={`/images/app.png`}
                         alt="hero"
                         height={720}
                         width={1400}
                         className="mx-auto rounded-2xl object-cover h-full object-left-top"
                         draggable={false}
+                        unoptimized
                     />
                 </ContainerScroll>
 

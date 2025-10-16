@@ -23,10 +23,7 @@ export function ProblemComparison() {
         <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'hsl(240 5% 96%)' }}>
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2
-                        className="text-4xl md:text-5xl mb-4"
-                        style={{ fontFamily: 'Poppins, sans-serif' }}
-                    >
+                    <h2 className="text-4xl md:text-5xl mb-4 font-bold" >
                         Why Choose <span style={{ color: 'hsl(217 91% 60%)' }}>Libly.Space</span>?
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -38,7 +35,7 @@ export function ProblemComparison() {
                     {/* Traditional Method */}
                     <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
                         <div className="mb-6">
-                            <h3 className="text-2xl mb-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                            <h3 className="text-2xl mb-2 font-semibold" >
                                 Traditional Method
                             </h3>
                             <p className="text-gray-600">
@@ -65,7 +62,7 @@ export function ProblemComparison() {
                         }}
                     >
                         <div className="mb-6">
-                            <h3 className="text-2xl mb-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                            <h3 className="text-2xl mb-2 font-semibold" >
                                 Libly.Space
                             </h3>
                             <p className="text-gray-700">

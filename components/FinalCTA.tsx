@@ -16,10 +16,7 @@ export function FinalCTA() {
                     </div>
 
                     <div className="relative z-10 max-w-3xl mx-auto">
-                        <h2
-                            className="text-4xl md:text-5xl text-white mb-6"
-                            style={{ fontFamily: 'Poppins, sans-serif' }}
-                        >
+                        <h2 className="text-4xl md:text-5xl text-white mb-6 font-bold" >
                             Ready to Transform Your Library Management?
                         </h2>
                         <p className="text-xl text-white/90 mb-8">
@@ -45,13 +42,15 @@ export function FinalCTA() {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="border-white text-white hover:bg-white/10 w-full sm:w-auto"
+                                className="border-white w-full sm:w-auto"
+                                style={{ color: 'hsl(217 91% 60%)' }}
                                 onClick={() => {
                                     const element = document.getElementById('features');
                                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                                 }}
                             >
                                 Explore Features
+                                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </div>
 
