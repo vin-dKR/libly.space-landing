@@ -23,10 +23,10 @@ export function ProblemComparison() {
         <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'hsl(240 5% 96%)' }}>
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl mb-4 font-bold" >
+                    <h2 className="text-2xl md:text-5xl mb-4 font-bold" >
                         Why Choose <span style={{ color: 'hsl(217 91% 60%)' }}>Libly.Space</span>?
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-sm sm:text-xl text-gray-600 max-w-3xl mx-auto">
                         Stop wasting time on outdated methods. See how we compare to traditional systems.
                     </p>
                 </div>

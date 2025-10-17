@@ -1,5 +1,4 @@
 import { Button } from "./ui/button";
-import { CheckCircle2 } from "lucide-react";
 import { ContainerScroll } from "./ui/container-scroll-animation";
 import Image from "next/image";
 import Prism from "./react-bits/Prism";
@@ -12,7 +11,7 @@ export function Hero() {
             {/* Prism Background - positioned absolutely */}
             <div className="absolute inset-0 z-0">
                 <Prism
-                    animationType="rotate"
+                    animationType="hover"
                     timeScale={0.5}
                     height={3.5}
                     baseWidth={5.5}
@@ -37,7 +36,9 @@ export function Hero() {
                                 </span>
                             </div>
 
-                            <h1 className="text-4xl md:text-6xl tracking-tight font-bold text-gray-900">
+                            <h1 className="text-4xl md:text-6xl tracking-tight font-bold text-gray-900"
+                                style={{ fontFamily: 'Poppins, sans-serif' }}
+                            >
                                 Manage Your Library{" "}
                                 <span className="text-blue-600">Effortlessly</span>
                             </h1>
@@ -48,14 +49,13 @@ export function Hero() {
                                 all in one secure platform.
                             </p>
 
-                            <div className="space-y-1">
+                            <div className="space-x-4 flex flex-row w-full mx-auto justify-center">
                                 {[
                                     "Real-time seat tracking",
                                     "Automated payment & due calculations",
                                     "Multiple shift management"
                                 ].map((feature) => (
-                                    <div key={feature} className="flex items-center gap-3 justify-center">
-                                        <CheckCircle2 className="w-4 h-5 flex-shrink-0 text-blue-600" />
+                                    <div key={feature} className="gap-10 bg-white/30 px-6 rounded-2xl pb-1 border border-white/20">
                                         <span className="text-xs lg:text-md text-gray-700">{feature}</span>
                                     </div>
                                 ))}
@@ -71,7 +71,7 @@ export function Hero() {
                                         size="lg"
                                         className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto font-semibold"
                                     >
-                                        Start Free Trial
+                                        Sign Up for Free
                                     </Button>
                                 </a>
                                 <Button
@@ -83,7 +83,7 @@ export function Hero() {
                                     }}
                                     className="w-auto font-semibold"
                                 >
-                                    Learn More
+                                    Log In
                                 </Button>
                             </div>
 
