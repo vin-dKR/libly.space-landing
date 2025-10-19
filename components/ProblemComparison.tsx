@@ -20,34 +20,37 @@ export function ProblemComparison() {
     ];
 
     return (
-        <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'hsl(240 5% 96%)' }}>
-            <div className="max-w-7xl mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-2xl md:text-5xl mb-4 font-bold" >
+        <section
+            className="w-full flex items-center justify-center py-12 lg:py-0"
+            style={{ backgroundColor: 'hsl(240 5% 96%)', minHeight: '100vh' }}
+        >
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div className="text-center mb-12 lg:mb-16">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6">
                         Why Choose <span style={{ color: 'hsl(217 91% 60%)' }}>Libly.Space</span>?
                     </h2>
-                    <p className="text-sm sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
                         Stop wasting time on outdated methods. See how we compare to traditional systems.
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
                     {/* Traditional Method */}
-                    <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
-                        <div className="mb-6">
-                            <h3 className="text-2xl mb-2 font-semibold" >
+                    <div className="bg-white rounded-xl lg:rounded-2xl p-6 lg:p-8 border border-gray-200">
+                        <div className="mb-6 lg:mb-8">
+                            <h3 className="text-xl sm:text-2xl lg:text-3xl mb-2 lg:mb-3 font-semibold">
                                 Traditional Method
                             </h3>
-                            <p className="text-gray-600">
+                            <p className="text-gray-600 text-sm lg:text-base">
                                 Paper registers & Excel sheets
                             </p>
                         </div>
 
-                        <div className="space-y-4">
+                        <div className="space-y-3 lg:space-y-4">
                             {traditionalProblems.map((problem, index) => (
                                 <div key={index} className="flex items-start gap-3">
                                     <X className="w-5 h-5 flex-shrink-0 text-red-500 mt-0.5" />
-                                    <span className="text-gray-700">{problem}</span>
+                                    <span className="text-gray-700 text-sm lg:text-base">{problem}</span>
                                 </div>
                             ))}
                         </div>
@@ -55,29 +58,29 @@ export function ProblemComparison() {
 
                     {/* Libly.Space Solution */}
                     <div
-                        className="rounded-2xl p-8 shadow-lg border-2"
+                        className="rounded-xl lg:rounded-2xl p-6 lg:p-8 border-2"
                         style={{
                             backgroundColor: 'hsl(217 91% 95%)',
                             borderColor: 'hsl(217 91% 60%)'
                         }}
                     >
-                        <div className="mb-6">
-                            <h3 className="text-2xl mb-2 font-semibold" >
+                        <div className="mb-6 lg:mb-8">
+                            <h3 className="text-xl sm:text-2xl lg:text-3xl mb-2 lg:mb-3 font-semibold">
                                 Libly.Space
                             </h3>
-                            <p className="text-gray-700">
+                            <p className="text-gray-700 text-sm lg:text-base">
                                 Modern cloud-based system
                             </p>
                         </div>
 
-                        <div className="space-y-4">
+                        <div className="space-y-3 lg:space-y-4">
                             {liblyBenefits.map((benefit, index) => (
                                 <div key={index} className="flex items-start gap-3">
                                     <Check
                                         className="w-5 h-5 flex-shrink-0 mt-0.5"
                                         style={{ color: 'hsl(217 91% 60%)' }}
                                     />
-                                    <span className="text-gray-900">{benefit}</span>
+                                    <span className="text-gray-900 text-sm lg:text-base">{benefit}</span>
                                 </div>
                             ))}
                         </div>

@@ -1,7 +1,17 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Users, Layout, Clock, IndianRupee, UserCircle, HeadphonesIcon, Shield } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 
-const features = [
+interface Feature {
+    icon: LucideIcon;
+    title: string;
+    subtitle: string;
+    description: string;
+    image: string;
+    imagePosition: "left" | "right";
+}
+
+const features: Feature[] = [
     {
         icon: Users,
         title: "Student Management",
@@ -54,32 +64,32 @@ const features = [
 
 export function FeaturesShowcase() {
     return (
-        <section id="features" className="py-20 px-4 sm:px-6 lg:px-8">
+        <section id="features" className="w-full py-12 lg:py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl mb-4 font-bold">
+                <div className="text-center mb-12 lg:mb-16">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-4 lg:mb-6 font-bold">
                         Powerful Features for{" "}
                         <span style={{ color: 'hsl(217 91% 60%)' }}>Complete Control</span>
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
                         Everything you need to run your study hall efficiently
                     </p>
                 </div>
 
-                <div className="space-y-32">
-                    {features.map((feature, index) => {
+                <div className="space-y-20 lg:space-y-32">
+                    {features.map((feature: Feature, index: number) => {
                         const Icon = feature.icon;
                         const isLeft = feature.imagePosition === "left";
 
                         return (
                             <div
                                 key={index}
-                                className={`grid md:grid-cols-2 gap-12 items-center ${isLeft ? '' : 'md:grid-flow-dense'
+                                className={`grid md:grid-cols-2 gap-8 lg:gap-12 items-center ${isLeft ? '' : 'md:grid-flow-dense'
                                     }`}
                             >
                                 {/* Image */}
                                 <div className={isLeft ? '' : 'md:col-start-2'}>
-                                    <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+                                    <div className="rounded-xl lg:rounded-2xl overflow-hidden shadow-lg lg:shadow-xl border border-gray-200">
                                         <ImageWithFallback
                                             src={feature.image}
                                             alt={feature.title}
@@ -89,25 +99,25 @@ export function FeaturesShowcase() {
                                 </div>
 
                                 {/* Content */}
-                                <div className={`space-y-6 ${isLeft ? '' : 'md:col-start-1 md:row-start-1'}`}>
+                                <div className={`space-y-4 lg:space-y-6 ${isLeft ? '' : 'md:col-start-1 md:row-start-1'}`}>
                                     <div
-                                        className="w-14 h-14 rounded-xl flex items-center justify-center"
+                                        className="w-12 h-12 lg:w-14 lg:h-14 rounded-lg lg:rounded-xl flex items-center justify-center"
                                         style={{ backgroundColor: 'hsl(217 91% 95%)' }}
                                     >
-                                        <Icon className="w-7 h-7" style={{ color: 'hsl(217 91% 60%)' }} />
+                                        <Icon className="w-6 h-6 lg:w-7 lg:h-7" style={{ color: 'hsl(217 91% 60%)' }} />
                                     </div>
 
                                     <div>
                                         <p
-                                            className="text-sm mb-2"
+                                            className="text-xs lg:text-sm mb-2 font-medium"
                                             style={{ color: 'hsl(217 91% 60%)' }}
                                         >
                                             {feature.subtitle}
                                         </p>
-                                        <h3 className="text-3xl md:text-4xl mb-4" >
+                                        <h3 className="text-2xl sm:text-3xl lg:text-4xl mb-3 lg:mb-4 font-semibold">
                                             {feature.title}
                                         </h3>
-                                        <p className="text-lg text-gray-600 leading-relaxed">
+                                        <p className="text-base lg:text-lg text-gray-600 leading-relaxed">
                                             {feature.description}
                                         </p>
                                     </div>
@@ -119,19 +129,19 @@ export function FeaturesShowcase() {
 
                 {/* Security Feature */}
                 <div
-                    className="mt-32 rounded-3xl p-12 text-center"
+                    className="mt-20 lg:mt-32 rounded-2xl lg:rounded-3xl p-6 lg:p-12 text-center"
                     style={{ backgroundColor: 'hsl(217 91% 95%)' }}
                 >
                     <div
-                        className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
+                        className="w-12 h-12 lg:w-16 lg:h-16 rounded-xl lg:rounded-2xl flex items-center justify-center mx-auto mb-4 lg:mb-6"
                         style={{ backgroundColor: 'hsl(217 91% 60%)' }}
                     >
-                        <Shield className="w-8 h-8 text-white" />
+                        <Shield className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
                     </div>
-                    <h3 className="text-3xl mb-4 font-bold">
+                    <h3 className="text-2xl lg:text-3xl mb-3 lg:mb-4 font-bold">
                         Safe & Secure
                     </h3>
-                    <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                    <p className="text-base lg:text-lg text-gray-700 max-w-2xl mx-auto">
                         Your data is securely hosted on app.libly.space with enterprise-grade security,
                         automatic backups, and 99.9% uptime guarantee.
                     </p>

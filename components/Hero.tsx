@@ -31,14 +31,12 @@ export function Hero() {
                             <div
                                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white/30 border border-white/20 shadow-xl"
                             >
-                                <span className="text-xs sm:text-sm text-blue-600">
+                                <span className="text-xs sm:text-sm text-blue-600 font-bold">
                                     ✨ Modern Library Management System
                                 </span>
                             </div>
 
-                            <h1 className="text-4xl md:text-6xl tracking-tight font-bold text-gray-900"
-                                style={{ fontFamily: 'Poppins, sans-serif' }}
-                            >
+                            <h1 className="text-4xl md:text-6xl tracking-tight font-bold text-gray-900 font-satoshiBlack" >
                                 Manage Your Library{" "}
                                 <span className="text-blue-600">Effortlessly</span>
                             </h1>
@@ -49,14 +47,14 @@ export function Hero() {
                                 all in one secure platform.
                             </p>
 
-                            <div className="space-x-4 flex flex-row w-full mx-auto justify-center">
+                            <div className="flex flex-col sm:flex-row mx-auto justify-center items-center space-x-0 sm:space-x-4 space-y-2 sm:space-y-0">
                                 {[
                                     "Real-time seat tracking",
                                     "Automated payment & due calculations",
                                     "Multiple shift management"
                                 ].map((feature) => (
-                                    <div key={feature} className="gap-10 bg-white/30 px-6 rounded-2xl pb-1 border border-white/20">
-                                        <span className="text-xs lg:text-md text-gray-700">{feature}</span>
+                                    <div key={feature} className="gap-10 bg-white/30 px-6 rounded-2xl border border-white/30 pb-1 shadow-2xl">
+                                        <span className="text-xs lg:text-md text-gray-700 w-full">{feature}</span>
                                     </div>
                                 ))}
                             </div>

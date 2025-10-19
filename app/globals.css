@@ -5,6 +5,7 @@
 
 @theme {
     --font-satoshiReg: "Satoshi", "sans-serif";
+    --font-satoshiBlack: "SatoshiBlack", "sans-serif";
 }
 
 @theme inline {
@@ -131,4 +132,12 @@
     font-weight: 400;
     font-display: swap;
     src: url("/fonts/satoshi/Satoshi-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: SatoshiBlack;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/satoshi/Satoshi-Black.otf") format('opentype');
 }
